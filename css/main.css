@@ -33,3 +33,21 @@ a[href^="http"]{
     border-left: 2px solid #551cf1;
     padding-left: 1rem;
 }
+nav a,
+nav a:link,
+nav a:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    transition: 0.5s;
+}
+nav a:hover{
+    text-decoration: underline;
+    transform: scale(1.5);
+}
+a[href$=".pdf"]::after{
+    content: "\2913";
+    color: tomato;
+    font-size: 1.24rem;
+
+}
