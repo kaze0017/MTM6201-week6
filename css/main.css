@@ -1,0 +1,35 @@
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    flex: 1;
+    text-align: center;
+}
+main > p {
+    font-size: 1.25rem;
+}
+h2+p{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+.stars span:hover ~ span{
+    opacity:  0.5;
+}
+.stars span{
+    cursor: pointer;
+}
+a[href="#"]{
+    color: tomato;
+}
+a[href^="http"]{
+    border-left: 2px solid #551cf1;
+    padding-left: 1rem;
+}
