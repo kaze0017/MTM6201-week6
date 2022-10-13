@@ -1,3 +1,9 @@
+:root{
+    --special-color: tomato;
+    --second-color:purple;
+    --lighting-color: white;
+    --dark-color:black;
+}
 .container{
     max-width: 900px;
     margin: 0 auto;
@@ -27,7 +33,7 @@ h2+p{
     cursor: pointer;
 }
 a[href="#"]{
-    color: tomato;
+    color: var(--special-color);
 }
 a[href^="http"]{
     border-left: 2px solid #551cf1;
@@ -38,7 +44,7 @@ nav a:link,
 nav a:visited{
     display: inline-block;
     text-decoration: none;
-    color: red;
+    color: var(--special-color);
     transition: 0.5s;
 }
 nav a:hover{
@@ -47,7 +53,12 @@ nav a:hover{
 }
 a[href$=".pdf"]::after{
     content: "\2913";
-    color: tomato;
+    color: var(--special-color);
     font-size: 1.24rem;
-
+}
+h2+p::first-line{color: var(--special-color);}
+h2+p::first-letter{
+    color: #var(--special-color); 
+    font-family: Georgia;
+    initial-letter: 2;
 }
